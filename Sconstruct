@@ -1,0 +1,10 @@
+import os.path
+
+def main():
+    print ("\nStart scons compiling.")
+    env = Environment(CPPPATH = '.')
+    env.Program(target="guiTest_1/guiTest_1_main", source=["guiTest_1/guiTest_1_main.cpp"])
+
+    
+
+main()
